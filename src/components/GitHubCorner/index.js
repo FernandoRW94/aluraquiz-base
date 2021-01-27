@@ -32,8 +32,8 @@ const SVGWrapper = styled.svg`
   }
 `;
 
-// eslint-disable-next-line react/prop-types
-export default function GitHubCorner({ projectUrl }) {
+// eslint-disable-next-line no-empty-pattern
+export default function GitHubCorner({ }) {
   return (
     <Wrapper>
       <a href="/contribuidores" target="_blank" rel="noreferrer">
