@@ -1,28 +1,82 @@
 {
   "bg": "https://images.unsplash.com/photo-1561323587-7464f7689886?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80",
-  "title": "Quiz Chess do Fernando",
-  "description": "Teste os seus conhecimentos sobre Chess e vamos ver quão pouco você entende de xadrez.",
+  "title": "Quiz Chess for Dumbs",
+  "description": "Put your beginner's chess knowledge to test and let's see how little you know about it.",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "https://images.unsplash.com/photo-1604948501466-4e9c339b9c24?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+      "title": "How many files",
+      "description": "How many files there are in a Chess board?",
+      "answer": 3,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "68",
+        "81",
+        "49",
+        "64"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://images.unsplash.com/photo-1582925250462-d012a22ef727?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+      "title": "Castling",
+      "description": "What is castling?",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+        "The ability to change the positions between the King and the Rook.",
+        "The ability to move 2 files in a single move with the pawns.",
+        "The ability to capture a pawn after he moves two files by going to the jumped file.",
+        "The ability to promote your pawn after reaching the other side of the board."
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1599325313240-0402a1ba2c66?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80",
+      "title": "En Passant",
+      "description": "What is En-passant?",
+      "answer": 2,
+      "alternatives": [
+         "The ability to change the positions between the King and the Rook to the Queen's side.",
+         "The ability to move 2 files in a single move with the pawns.",
+         "The ability to capture a pawn after he moves two files by going to the jumped file.",
+         "The ability to exchange your promoted pawn to a Queen after reaching the other side of the board.",
+         "The ability to change the positions between the King and the Rook to the King's side."
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1606228799833-d8f3ea34c059?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80",
+      "title": "Piece on D1 at start",
+      "description": "Which piece is on D1 at the beggining of the game?",
+      "answer": 3,
+      "alternatives": [
+        "Black King",
+        "Black Queen",
+        "White King",
+        "White Queen",
+        "Black Bishop"
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1577643893548-4d601ef89513?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "title": "Piece on E8 at start",
+      "description": "Which piece is on E8 at the beggining of the game?",
+      "answer": 0,
+      "alternatives": [
+         "Black King",
+         "Black Queen",
+         "White King",
+         "White Bishop",
+         "Black Bishop"
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1558351534-3981150c0cad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1349&q=80",
+      "title": "Fastest checkmate",
+      "description": "Which sequence describes the fastest checkmate in Chess?",
+      "answer": 3,
+      "alternatives": [
+         "1. e3 f6 | 2. Qh5#",
+         "1. c3 d6 | 2. Qa5#",
+         "1. e3 d6 | 2. Bb5#",
+         "1. f3 e5 | 2. g4 Qh4#",
+         "1. d3 e6 | 2. e4 Bb4#"
       ]
     }
   ],

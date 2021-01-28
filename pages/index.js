@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
@@ -28,7 +27,7 @@ export default function Home() {
 
                 <Widget>
                     <Widget.Header>
-                        <h1>Chess</h1>
+                        <h1>Chess for Dumbs</h1>
                     </Widget.Header>
 
                     <Widget.Content>
@@ -47,7 +46,7 @@ export default function Home() {
                             />
 
                             <Button type="button" disabled={name.length === 0}>
-                                Jogar
+                                Play
                             </Button>
                         </form>
                     </Widget.Content>
@@ -55,7 +54,7 @@ export default function Home() {
 
                 <Widget>
                     <Widget.Content>
-                        <h1>Quizes da Galera</h1>
+                        <h1>Other quizzes</h1>
 
                         <p>lorem ipsum dolor sit amet...</p>
                     </Widget.Content>
