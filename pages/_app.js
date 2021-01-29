@@ -27,10 +27,10 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const { theme } = db;
-
 // eslint-disable-next-line react/prop-types
 export default function App({ Component, pageProps }) {
+    const [theme, setTheme] = React.useState(db.theme);
+
     return (
         <>
             <Head>
@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }) {
                 <GlobalStyle />
 
                 {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-                <Component {...pageProps} />
+                <Component {...pageProps} setTheme={setTheme} />
             </ThemeProvider>
         </>
     );

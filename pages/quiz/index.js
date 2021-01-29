@@ -2,13 +2,13 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 
-import db from '../db.json';
-import QuizContainer from '../src/components/QuizContainer';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import Button from '../src/components/Button';
-import AlternativesForm from '../src/components/AlternativesForm';
+import db from '../../db.json';
+import QuizContainer from '../../src/components/QuizContainer';
+import Widget from '../../src/components/Widget';
+import QuizLogo from '../../src/components/QuizLogo';
+import QuizBackground from '../../src/components/QuizBackground';
+import Button from '../../src/components/Button';
+import AlternativesForm from '../../src/components/AlternativesForm';
 
 function ResultWidget({ results, userName }) {
     const correctResults = results.reduce((currentSum, currentResult) => {

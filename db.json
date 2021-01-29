@@ -1,6 +1,6 @@
 {
   "bg": "https://images.unsplash.com/photo-1561323587-7464f7689886?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80",
-  "title": "Quiz Chess for Dumbs",
+  "title": "Chess for dumbs - #AluraQuiz",
   "description": "Put your beginner's chess knowledge to test and let's see how little you know about it.",
   "questions": [
     {
@@ -81,7 +81,9 @@
     }
   ],
   "external": [
-    ""
+    "https://aluraquiz-base.alura-challenges.vercel.app/",
+    "https://aluraquiz-css.omariosouto.vercel.app/",
+    "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
   ],
   "theme": {
     "colors": {

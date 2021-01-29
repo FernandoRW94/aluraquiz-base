@@ -65,4 +65,12 @@ Widget.Topic = styled.a`
   }
 `;
 
+Widget.IconLink = styled.a`
+  > svg {
+    width: 20px;
+    margin-right: 5px;
+    fill: ${({ theme }) => theme.colors.secondary};
+  }
+`;
+
 export default Widget;
