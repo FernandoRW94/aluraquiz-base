@@ -9,6 +9,6 @@ export default function Home({ setTheme }) {
     }, []);
 
     return (
-        <MainQuizComponent db={db} />
+        <MainQuizComponent db={db} externalUrl={undefined} />
     );
 }

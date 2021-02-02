@@ -63,6 +63,10 @@ Widget.Topic = styled.a`
   &:focus {
     opacity: .5;
   }
+
+  &[disabled] {
+    pointer-events: none;
+  }
 `;
 
 Widget.IconLink = styled.a`

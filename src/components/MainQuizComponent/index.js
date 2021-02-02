@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
 
 import Widget from '../Widget';
 import QuizLogo from '../QuizLogo';
@@ -12,7 +13,7 @@ import Input from '../Input';
 import Button from '../Button';
 import QuizContainer from '../QuizContainer';
 
-export default function MainQuizComponent({ db }) {
+export default function MainQuizComponent({ db, externalUrl }) {
     const router = useRouter();
     const [name, setName] = React.useState('');
 
@@ -25,7 +26,25 @@ export default function MainQuizComponent({ db }) {
             <QuizContainer>
                 <QuizLogo />
 
-                <Widget>
+                <Widget
+                    as={motion.section}
+                    variants={{
+                        show: {
+                            opacity: 1,
+                            y: '0',
+                        },
+                        hidden: {
+                            opacity: 0,
+                            y: '100%',
+                        },
+                    }}
+                    initial="hidden"
+                    animate="show"
+                    transition={{
+                        delay: 0,
+                        duration: 0.5,
+                    }}
+                >
                     <Widget.Header>
                         <h1 style={{
                             display: 'flex',
@@ -60,6 +79,7 @@ export default function MainQuizComponent({ db }) {
                     <Widget.Content>
                         <form onSubmit={(infosDoEvento) => {
                             infosDoEvento.preventDefault();
+
                             router.push(`/quiz?name=${name}`);
                         }}
                         >
@@ -68,20 +88,39 @@ export default function MainQuizComponent({ db }) {
                                     setName(infosDoEvento.target.value);
                                 }}
                                 placeholder="name..."
-                                name="nomeDoUsuario"
+                                name="userName"
                                 value={name}
                             />
 
-                            <Button type="button" disabled={name.length === 0}>
+                            <Button type="submit" disabled={name.length === 0}>
                                 Play
                             </Button>
                         </form>
                     </Widget.Content>
                 </Widget>
 
-                <Widget>
+                <Widget
+                    as={motion.section}
+                    variants={{
+                        show: {
+                            opacity: 1,
+                            x: '0',
+                        },
+                        hidden: {
+                            opacity: 0,
+                            x: '100%',
+                        },
+                    }}
+                    initial="hidden"
+                    animate="show"
+                    transition={{
+                        delay: 0.5,
+                        duration: 0.5,
+                    }}
+                >
                     <Widget.Content>
                         <h1>Other quizzes</h1>
+                        <p>Fill in your name before choosing one.</p>
 
                         <ul>
                             {db.external.map((link, index) => {
@@ -90,8 +129,8 @@ export default function MainQuizComponent({ db }) {
                                 return (
                                     // eslint-disable-next-line react/no-array-index-key
                                     <li key={`external_quiz_${index}`}>
-                                        <Link href={`/quiz/${quizName}?username=${userName}`}>
-                                            <Widget.Topic href={`/quiz/${quizName}?username=${userName}`}>
+                                        <Link href={`/quiz/${quizName}___${userName}?name=${name}`} disabled={name.length === 0}>
+                                            <Widget.Topic href={`/quiz/${quizName}___${userName}?name=${name}`} disabled={name.length === 0}>
                                                 {`${quizName} / ${userName}`}
                                             </Widget.Topic>
                                         </Link>
@@ -102,7 +141,23 @@ export default function MainQuizComponent({ db }) {
                     </Widget.Content>
                 </Widget>
 
-                <Footer />
+                <Footer
+                    as={motion.footer}
+                    variants={{
+                        show: {
+                            opacity: 1,
+                        },
+                        hidden: {
+                            opacity: 0,
+                        },
+                    }}
+                    initial="hidden"
+                    animate="show"
+                    transition={{
+                        delay: 1.0,
+                        duration: 0.5,
+                    }}
+                />
             </QuizContainer>
 
             <GitHubCorner projectUrl="https://github.com/FernandoRW94" />
